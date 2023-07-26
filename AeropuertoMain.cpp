@@ -5,7 +5,7 @@ using namespace std;
 
 #include "Aeropuerto.h"
 int main(){
-    Aeropuerto cdmx("Benito Juarez", "Ciudad de Mexio",20);
+    Aeropuerto cdmx("Benito Juarez", "Ciudad de Mexio", 2, 20);
     
     cout<<"\nBienvenido al Aeropuerto Internacional de la Ciudad de Mexico\n";
     
@@ -15,12 +15,13 @@ int main(){
     cin>>ingresar;
     
     if(ingresar == 1){
-        cout<<cdmx.aeropuerto_toString(); 
+        cout<<cdmx.aeropuerto_toString() + "\n"; 
     }
     else{
         cout<<"Regresa Pronto";
     }
    
+    cdmx.escogerHorario();
 
     return 0;
 }
