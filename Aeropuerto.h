@@ -7,12 +7,16 @@ using namespace std;
 class Aeropuerto{
     private:
         int numeroHorarios; //Cantidad de horarios disponibles
-        string disponibilidad[7]; //!Possible Error
+        string disponibilidad[7]; 
         int num_gates;
+        string lugar; // Lugar Aeropuerto
+        string nombre; // Nombre Aeropuerto
     
     public:
         // Constructor que toma el numero de gates y horario 
-        Aeropuerto(int numGates){
+        Aeropuerto(string _nombre,string _lugar, int numGates){
+            lugar = _lugar;
+            nombre = _nombre;
             num_gates = numGates;
             disponibilidad[0] = "(1). 12:00-1:00";
             disponibilidad[1] = "(2). 1:00-2:00";
@@ -41,5 +45,7 @@ class Aeropuerto{
             }
         return info;
     }
+
+    //? Metodo para escoger horario //
 
 };
