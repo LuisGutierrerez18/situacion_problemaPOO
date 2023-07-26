@@ -32,8 +32,8 @@ class Aeropuerto{
 
         string aeropuerto_toString(){
             numeroHorarios = 7;
-            string info = "Number of Gates: " + to_string(getNumGate()) + "\n";
-            info += "Available Slots:\n";
+            string info = "Numero de Gates: " + to_string(getNumGate()) + "\n";
+            info += "Horarios Disponibles:\n";
             for (int i = 0; i < numeroHorarios; ++i){
                 info += disponibilidad[i] + "\n";
             }
