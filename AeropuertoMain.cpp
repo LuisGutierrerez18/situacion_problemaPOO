@@ -8,7 +8,7 @@ int main(){
 
     Aeropuerto aeropuerto1(20);
 
-    aeropuerto1.aeropuerto_toString(); 
+    cout<<aeropuerto1.aeropuerto_toString(); 
 
     return 0;
 }
