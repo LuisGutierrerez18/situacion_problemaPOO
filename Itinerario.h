@@ -67,7 +67,14 @@ class Itinerario{
             cout<<"\n Ingresa el destino: ";
             cin>>destino;
 
-            cout<<"\n Gate Numero: A2";
+            //cout<<"\n Gate Numero: A2";
+        }
 
+        string Itinerario_toString(){
+            string info = "Hora: " + getHora() + "\n";
+            info += "Fecha: " + getFecha() + "\n";
+            info += "Destino: " + getDestino()+"\n";
+            info += "Gate: A2";
+            return info;  
         }
 };

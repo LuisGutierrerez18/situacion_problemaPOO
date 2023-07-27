@@ -74,7 +74,8 @@ class Aeropuerto{
             for (int i = 0; i < numeroHorarios; ++i){
                 info += disponibilidad[i] + "\n";
             }
-        return info;
+            
+            return info;
     }
 
         // Funcion pregunta al aerolinea que horario quiere ocupar 
