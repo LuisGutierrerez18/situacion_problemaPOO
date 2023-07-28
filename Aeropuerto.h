@@ -20,7 +20,7 @@ class Aeropuerto{
             nombre = _nombre;
             num_gates = numGates;
             numPistas = _pistas;
-            disponibilidad[0] = "(1). 12:00-1:00 AM";
+            disponibilidad[0] = "(1). 00:00-1:00 AM";
             disponibilidad[1] = "(2). 1:00-2:00 AM";
             disponibilidad[2] = "(3). 2:00-3:00 AM";
             disponibilidad[3] = "(4). 3:00-4:00 AM";
@@ -88,30 +88,37 @@ class Aeropuerto{
             if(horario==1){
                 cout<<"Su horario es: ";
                 cout<<disponibilidad[0] + "\n";
+                cout<<"\nHora de Aterrizaje: 00:00 AM \nHora de Despegue: 1:00 AM\n";
             }
             else if(horario==2){
                 cout<<"Su horario es: ";
                 cout<<disponibilidad[1] + "\n";
+                cout<<"\nHora de Aterrizaje: 1:00 AM \nHora de Despegue: 2:00 AM\n";
             }
             else if(horario==3){
                 cout<<"Su horario es: ";
                 cout<<disponibilidad[2] + "\n";
+                cout<<"\nHora de Aterrizaje: 2:00 AM \nHora de Despegue: 3:00 AM";
             }
             else if(horario==4){
                 cout<<"Su horario es: ";
                 cout<<disponibilidad[3] + "\n";
+                cout<<"\nHora de Aterrizaje: 3:00 AM \nHora de Despegue: 4:00 AM\n";
             }
             else if(horario==5){
                 cout<<"Su horario es: ";
                 cout<<disponibilidad[4] + "\n";
+                cout<<"\nHora de Aterrizaje: 4:00 AM \nHora de Despegue: 5:00 AM\n";
             }
             else if(horario==6){
                 cout<<"Su horario es: ";
                 cout<<disponibilidad[5] + "\n";
+                cout<<"\nHora de Aterrizaje: 5:00 AM \nHora de Despegue: 6:00 AM\n";
             }
             else if(horario==7){
                 cout<<"Su horario es: ";
                 cout<<disponibilidad[6] + "\n";
+                cout<<"\nHora de Aterrizaje: 6:00 AM \nHora de Despegue: 7:00 AM\n";
             }
             // Imprime el horario seleccionado
         }

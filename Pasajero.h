@@ -13,6 +13,7 @@ class Pasajero{
         Itinerario* vuelo;
 
     public:
+        //Constructor
         Pasajero(string _nombre, int _edad, string _nacionalidad, int _numMaletas /*Itinerario vuelo*/){
             nombre = _nombre;
             edad = _edad;
@@ -53,7 +54,7 @@ class Pasajero{
         void setItinerario(Itinerario* _itinerario){
             vuelo = _itinerario;
         }
-
+        // Display informacion sobre el pasajero
         string Pasajero_toString(){
             string info = "\nNombre: " + getNombre() + "\n";
             info += "Edad: " + to_string(getEdad()) + "\n";
