@@ -25,7 +25,7 @@ int main(){
         cdmx.escogerHorario();
     }
     else if(ingresar ==2){
-        cout<<"Su informacion de pasajero es la siguiente" +  pasajero.Pasajero_toString();
+        cout<<"Su informacion de pasajero es la siguiente\n" +  pasajero.Pasajero_toString() ;
        
         vuelo.buscarVuelo();
         

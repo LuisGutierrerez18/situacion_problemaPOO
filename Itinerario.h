@@ -66,7 +66,7 @@ class Itinerario{
         }
 
         void buscarVuelo(){
-            cout<<"Ingresa la Hora: ";
+            cout<<"\nIngresa la Hora: ";
             cin>> hora;
 
             cout<<"\nIngresa la fecha: ";
@@ -79,10 +79,13 @@ class Itinerario{
         }
 
         string Itinerario_toString(){
-            string info = "Hora: " + getHora() + "\n";
+            string info = "\nHora: " + getHora() + "AM\n";
             info += "Fecha: " + getFecha() + "\n";
             info += "Destino: " + getDestino()+"\n";
-            info += "Gate: A2";
+            info += "Gate: A2\n";
+            info+= "\nRecuerde estar al menos tres horas antes en la terminal\n";
+            info += "Buen Viaje!\n";
+            cout<<"";
             return info;  
         }
 };
