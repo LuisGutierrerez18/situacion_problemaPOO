@@ -4,10 +4,13 @@
 using namespace std;
 
 #include "Aeropuerto.h"
-#include "Itinerario.h"
-
+//#include "Itinerario.h"
+#include "Pasajero.h"
 int main(){
+    
+    Pasajero pasajero("Sergio Perez", 33, "Mexico", 1);
     Aeropuerto cdmx("Benito Juarez", "Ciudad de Mexio", 2, 20);
+    
     Itinerario vuelo("","","","");
     cout<<"\nBienvenido al Aeropuerto Internacional de la Ciudad de Mexico\n";
     //! Dos opciones pasajero o aerolinea
@@ -18,12 +21,17 @@ int main(){
     cin>>ingresar;
     
     if(ingresar == 1){
-        cout<<cdmx.aeropuerto_toString() + "\n"; 
+        cout<<"\n"+cdmx.aeropuerto_toString() + "\n"; 
         cdmx.escogerHorario();
     }
-    else if(ingresar ==2) {
+    else if(ingresar ==2){
+        cout<<"Su informacion de pasajero es la siguiente" +  pasajero.Pasajero_toString();
+       
         vuelo.buscarVuelo();
+        
+        pasajero.setItinerario(&vuelo);
         cout<<"Su vuelo esta agendado y este es el resumen: \n";
+        
         cout<< vuelo.Itinerario_toString();
     }
    

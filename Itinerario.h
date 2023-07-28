@@ -22,6 +22,14 @@ class Itinerario{
             gate = _gate;
         }
 
+        // Constructor por default
+        Itinerario(){
+            hora = "12:00 AM";
+            fecha = "20/07/23";
+            destino = "Madrid";
+            gate = "A2";
+        }
+
         // Getter que encuentra la hora que tiene el vuelo
         string getHora(){
             return hora;
@@ -61,10 +69,10 @@ class Itinerario{
             cout<<"Ingresa la Hora: ";
             cin>> hora;
 
-            cout<<"\n Ingresa la fecha: ";
+            cout<<"\nIngresa la fecha: ";
             cin>>fecha;
 
-            cout<<"\n Ingresa el destino: ";
+            cout<<"\nIngresa el destino: ";
             cin>>destino;
 
             //cout<<"\n Gate Numero: A2";
