@@ -2,7 +2,7 @@
 #include <string>
 
 using namespace std;
-#include "Itinerario.h"
+//#include "Itinerario.h"
 
 class Pasajero{
     private:
@@ -10,7 +10,7 @@ class Pasajero{
         int edad;
         string nacionalidad;
         int numMaletas;
-        Itinerario* vuelo;
+        //Itinerario* vuelo;
 
     public:
         //Constructor
@@ -50,10 +50,6 @@ class Pasajero{
             numMaletas = _numMaletas;
         }
         
-        // Debido a un error se utiliza apuntadores
-        void setItinerario(Itinerario* _itinerario){
-            vuelo = _itinerario;
-        }
         // Display informacion sobre el pasajero
         string Pasajero_toString(){
             string info = "\nNombre: " + getNombre() + "\n";

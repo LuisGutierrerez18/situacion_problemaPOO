@@ -2,7 +2,7 @@
 #include <string>
 
 using namespace std;
-
+#include "Itinerario.h"
 class Aerolinea{
 private:
     string nombre;
@@ -10,14 +10,34 @@ private:
     float ingresos;
     float comision;
     //flota Avion;
-    //vuelo Itinerario;
+    Itinerario* vuelo;
 public:
-    
-    Aerolinea(string _nombre,string _origen,float _ingresos,float _comision){
+/*
+    Aerolinea(){
+        nombre="Aeromexico";
+        origen="Mexicano";
+        ingresos=0.00;
+        comision=10000.00;
+    }
+*/
+    Aerolinea(string _nombre,string _origen,float _ingresos/*float _comision*/){
         nombre=_nombre;
         origen=_origen;
         ingresos=_ingresos;
-        comision=_comision;
+        //comision=_comision;
+    }
+
+    void AerolineaInformacion(){
+            cout<<"\nIngrese nombre de la Aerolinea: ";
+            cin>> nombre;
+
+            cout<<"\nLugar de Origen: ";
+            cin>>origen;
+
+            cout<<"\nIngresa los ingresos promedios: \n";
+            cin>>ingresos;
+
+            //cout<<"Precio boleto: "<<Itinerario_toString();
     }
     //getVuelo()
     void calcula_comision(){
@@ -26,6 +46,9 @@ public:
     void setIngresos(float _ingresos){
         ingresos = _ingresos;
     }
+     void setItinerario(Itinerario* _itinerario){
+        vuelo = _itinerario;
+    }
     
     void muestraAerolinea(){
         cout<<endl<<"Informacion de la aerolinea"<<endl;
@@ -33,7 +56,7 @@ public:
         cout<<"Origen: "<<origen<<endl;
         cout<<"Ingresos: "<<ingresos<<endl;
         cout<<"Comision: "<<comision<<endl;
-        cout<<"Ingresos: "<<ingresos+comision;
+        cout<<"Ingresos: "<<ingresos+comision<<"\n";
     }
 
 };

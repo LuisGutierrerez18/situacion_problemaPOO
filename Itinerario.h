@@ -3,7 +3,7 @@
 #include <string>
 
 using namespace std;
-//#include "Aerolinea.h"
+
 
 class Itinerario{
     private:
@@ -11,15 +11,16 @@ class Itinerario{
         string fecha;
         string destino;
         string gate;
-        //Aerolinea aerolinea;
+        float precio;
 
     public:
         //Constructor de Itinerario
-        Itinerario(string _hora, string _fecha, string _destino, string _gate){
+        Itinerario(string _hora, string _fecha, string _destino, string _gate, float _precio){
             hora = _hora;
             fecha = _fecha;
             destino = _destino;
             gate = _gate;
+            precio = 102.55;
         }
 
         // Constructor por default
@@ -65,6 +66,13 @@ class Itinerario{
             gate = _gate;
         }
 
+        float getPrecio(){
+            return precio;
+        }
+        void setPrecio(float _precio){
+            precio = _precio;
+        }
+
         void buscarVuelo(){
             cout<<"\nIngresa la Hora: ";
             cin>> hora;
@@ -83,6 +91,7 @@ class Itinerario{
             info += "Fecha: " + getFecha() + "\n";
             info += "Destino: " + getDestino()+"\n";
             info += "Gate: A2\n";
+            info += "Precio Boleto: " + to_string(getPrecio());
             info+= "\nRecuerde estar al menos tres horas antes en la terminal\n";
             info += "Buen Viaje!\n";
             cout<<"";
