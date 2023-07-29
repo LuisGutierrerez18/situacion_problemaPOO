@@ -120,6 +120,9 @@ class Aeropuerto{
                 cout<<disponibilidad[6] + "\n";
                 cout<<"\nHora de Aterrizaje: 6:00 AM \nHora de Despegue: 7:00 AM\n";
             }
+            else{
+                cout<<"No hay mas disponibilidad";
+            }
             // Imprime el horario seleccionado
         }
 
