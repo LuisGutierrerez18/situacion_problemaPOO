@@ -24,8 +24,10 @@ int main(){
     
     if(ingresar == 1){
         cout<<"\n"+cdmx.aeropuerto_toString() + "\n"; 
-        aerolinea1.muestraAerolinea();
+        aerolinea1.Aerolinea_toString();
         aerolinea2.AerolineaInformacion();
+        aerolinea2.Aerolinea_toString();
+        aerolinea2.muestraAerolinea();
         cdmx.escogerHorario();
     }
     else if(ingresar ==2){

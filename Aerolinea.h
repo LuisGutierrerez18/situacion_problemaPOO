@@ -49,7 +49,25 @@ public:
      void setItinerario(Itinerario* _itinerario){
         vuelo = _itinerario;
     }
+
+    string getNombre(){
+        return nombre;
+    }
+
+    string getOrigen(){
+        return origen;
+    }
+    float getIngresos(){
+        return ingresos;
+    }
     
+    string Aerolinea_toString(){
+            string info = "\nHora: " + getNombre() + "AM\n";
+            info += "Fecha: " + getOrigen() + "\n";
+            info+="Ingresos: " + to_string(getIngresos());
+            return info;  
+    }
+
     void muestraAerolinea(){
         cout<<endl<<"Informacion de la aerolinea"<<endl;
         cout<<"Nombre: "<<nombre<<endl;
@@ -58,6 +76,7 @@ public:
         cout<<"Comision: "<<comision<<endl;
         cout<<"Ingresos: "<<ingresos+comision<<"\n";
     }
+
 
 };
 
