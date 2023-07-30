@@ -79,7 +79,7 @@ class Itinerario{
         Pasajero getAsiento(){
             return asiento;
         }
-
+        //Le pide al usuario buscar un vuelo
         void buscarVuelo(){
             cout<<"\nIngresa la Hora: ";
             cin>> hora;
@@ -98,7 +98,7 @@ class Itinerario{
             info += "Fecha: " + getFecha() + "\n";
             info += "Destino: " + getDestino()+"\n";
             info += "Gate: A2\n";
-            info += "Precio Boleto: " + to_string(getPrecio());
+            info += "Precio Boleto: " + to_string(getPrecio())+"\n";
             info += "Informacion Personal:\n" + asiento.Pasajero_toString();
             info+= "\nRecuerde estar al menos tres horas antes en la terminal\n";
             info += "Buen Viaje!\n";
