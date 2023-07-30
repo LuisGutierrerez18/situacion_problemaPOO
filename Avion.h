@@ -18,7 +18,10 @@ public:
         fabricante=_fabricante;
         capacidad=_capacidad;
     }
-
+    
+    void calculaCapacidad(){
+        
+    }
     void muestraAvion(){
         cout<<endl<<"Informacion sobre el avion "<<endl;
         cout<<"     Modelo: "<<modelo<<endl;
@@ -26,7 +29,6 @@ public:
         cout<<"     Capacidad de pasajeros: "<<capacidad<<endl;
     }
 
-    void calculaCapacidad(){
-    }
+   
 
 };
