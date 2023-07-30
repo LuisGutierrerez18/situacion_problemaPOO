@@ -36,7 +36,7 @@ int main(){
         vuelo.buscarVuelo();
         
         //vuelo.setItinerario(&vuelo);
-        cout<<"Su vuelo esta agendado y este es el resumen: \n";
+        cout<<"Su vuelo esta agendado y este es el resumen:\n";
         
         cout<< vuelo.Itinerario_toString();
     }
