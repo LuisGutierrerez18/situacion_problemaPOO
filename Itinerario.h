@@ -3,7 +3,7 @@
 #include <string>
 
 using namespace std;
-
+#include "Pasajero.h"
 
 class Itinerario{
     private:
@@ -12,15 +12,17 @@ class Itinerario{
         string destino;
         string gate;
         float precio;
+        Pasajero asiento;
 
     public:
         //Constructor de Itinerario
-        Itinerario(string _hora, string _fecha, string _destino, string _gate, float _precio){
+        Itinerario(string _hora, string _fecha, string _destino, string _gate, float _precio, Pasajero _asiento){
             hora = _hora;
             fecha = _fecha;
             destino = _destino;
             gate = _gate;
             precio = 102.55;
+            asiento = _asiento;
         }
 
         // Constructor por default
@@ -29,6 +31,7 @@ class Itinerario{
             fecha = "20/07/23";
             destino = "Madrid";
             gate = "A2";
+           // asiento = "";
         }
 
         // Getter que encuentra la hora que tiene el vuelo
@@ -73,6 +76,10 @@ class Itinerario{
             precio = _precio;
         }
 
+        Pasajero getAsiento(){
+            return asiento;
+        }
+
         void buscarVuelo(){
             cout<<"\nIngresa la Hora: ";
             cin>> hora;
@@ -92,6 +99,7 @@ class Itinerario{
             info += "Destino: " + getDestino()+"\n";
             info += "Gate: A2\n";
             info += "Precio Boleto: " + to_string(getPrecio());
+            info += "Informacion Personal:\n" + asiento.Pasajero_toString();
             info+= "\nRecuerde estar al menos tres horas antes en la terminal\n";
             info += "Buen Viaje!\n";
             cout<<"";

@@ -5,7 +5,7 @@ using namespace std;
 
 #include "Aeropuerto.h"
 #include "Aerolinea.h"
-#include "Pasajero.h"
+//#include "Pasajero.h"
 int main(){
     
     Pasajero pasajero("Sergio Perez", 33, "Mexico", 1);
@@ -13,7 +13,7 @@ int main(){
     Aerolinea aerolinea1("British Airways", "Reino Unido", 1000.00);
     Aerolinea aerolinea2("","",10.0);
     
-    Itinerario vuelo("","","","",10.0);
+    Itinerario vuelo("","","","",10.0, pasajero);
     cout<<"\nBienvenido al Aeropuerto Internacional de la Ciudad de Mexico\n";
     //! Dos opciones pasajero o aerolinea
     int ingresar;

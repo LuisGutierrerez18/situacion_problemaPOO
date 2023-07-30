@@ -21,6 +21,14 @@ class Pasajero{
             numMaletas = _numMaletas;
             //vuelo("","","","");
         }
+        
+        Pasajero(){
+            nombre = "Juan";
+            edad = 35;
+            nacionalidad = "Mexico";
+            numMaletas = 2;
+
+        }
        
         string getNombre(){
             return nombre;
